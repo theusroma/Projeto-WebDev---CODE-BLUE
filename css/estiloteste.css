@@ -1,0 +1,57 @@
+/* Seção Hero com vídeo de fundo */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+  }
+  
+  #background-video {
+    object-fit: cover; /* Garante que o vídeo cubra toda a tela */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-text {
+    position: relative;
+    top: 30%;
+  }
+  
+  .hero-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Botão Saiba mais com fundo semitransparente */
+  .cta {
+    padding: 10px 20px;
+    background-color: rgba(0, 191, 255, 0.8); /* Cor do botão com transparência */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /* Garante que o botão tenha formato */
+    margin-top: 20px;
+  }
+  
+  .cta:hover {
+    background-color: #0099cc; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o botão ao passar o mouse */
+  }
+  
