@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida Marinha</title>
-    <link rel="stylesheet" href="estilo.css" >
+    <title>CodeBlue</title>
+    <link rel="stylesheet" href="css/estilos.css" >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/2.png" type="image/x-icon">
+
+
+
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <h1>Vida Marinha oi</h1>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#importancia">Importância</a></li>
-                <li><a href="#ajuda">Como Ajudar</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+   <div class="menu"></div>
     <main>
         <section id="videoprincipal">
             <div id="video-background">
                 <video autoplay muted loop id="background-video">
-                    <source src="videofds.mp4" type="video/mp4">
-                    <source src="videofds.webm" type="video/webm">
-                    Seu navegador não suporta a tag de vídeo.
+                    <source src="img/videoprincipal.mp4" type="video/mp4">
                   </video>
               </div>
+        </section>
     </main>
 
+<section class="imagem-fundo">
+    <div class="esquerda">
+        <div class="bloco bloco1">
+            <h2 class="texto1"> <b>É inovar a</b> <i>vida</i> <b>com a tecnologia.</b>
+                <br><b>É transformar desafios em</b> <i>soluções.</i><br>
+                <b>É</b> <i>cuidar</i> <b>do que importa.</b><br>
+                <b>É ser</b> <i>Azul.</i></h2>
+        </div>
+        <div class="bloco bloco2">
+            <p class="texto2"> <b>Ajude-nos a cuidar do</b> <i>Azul</i> <b>assine e faça parte da nossa equipe de apoiadores e</b> <i>inovadores</i> <b>que cuidam do oceano com suas ideias.</b>
+                <b>Sua doação</b> <i>salva vidas.</i> </p>
+        </div>
+    </div>
+
+    <!-- Texto à direita -->
+    <div class="direita">
+        <h3>A Q U A</h3>
+        <p><i>Assistente <br>social CodeBlue</i></p>
+    </div>
+</section>
     <section id="segundaparte">
         <p>
-            <h1 id="ondastexto">
-               
+            <h1 id="ondastexto"> 
             "As ondas carregam
             <br>
             um pedido.
@@ -43,11 +55,13 @@
             <br>
             <span id="codebluetexto">-CodeBlue</span>
             </h1>
-            
         </p>
 
         <img src="ondas.png" alt="" id="imagemonda">
     </section>
+ 
+    <div class="footer"></div>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
