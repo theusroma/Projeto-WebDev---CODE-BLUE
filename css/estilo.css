@@ -8,48 +8,79 @@
 
 /* fundo do site */
 body {
-    background-color: antiquewhite; /* Cor pro fundo do site */
-    font-family: Arial, sans-serif; /* fonte padrão */
     margin: 0;
     padding: 0;
-        font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eae1c8;
   }
 
   /* Navbar */
-#navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--azul-escuro);
     color: white;
     padding: 1rem 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
+.LogoCB img {
+    height: 50px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    width: auto; /*mantem a proporção da imagem*/
+    
+  }
 
-#navbar h1 {
-    font-size: 1.5rem;
-}
-
-#navbar ul {
+.navbar ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    color: var(--azul-medio);
+    font-size: 16px;
+    margin: 0 15px;
+    transition: color 0.4s ease;/*aplica transição de cor do link de 
+    maneira suave ao sair e entrar do hover*/
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--turquesa);
+    transition: all 0.4s ease;
+    transform: translate(-50%);
+}
+.navbar a:hover::after{
+    width: 100%;
 }
 
-#navbar ul li a {
-    color: white;
+.navbar ul li a {
+    color: var(--bege-claro);
     text-decoration: none;
     font-size: 1rem;
+    font-size: large;
+    margin: 20px;
 }
 
-#navbar ul li a:hover {
+.navbar ul li a:hover {
     color: var(--turquesa);
 }
 
-  
   /* Seção Hero com vídeo de fundo */
   #videoprincipal {
     position: relative;
-    height: 700px;
+    height: 918px;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência, se necessário */
@@ -62,6 +93,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+    
   }
   
   #background-video {
@@ -70,6 +102,81 @@ body {
     height: 100%;
   }
 
+  .imagem-fundo{
+  background-image: url('../img/aqua.svg');
+  background-size: cover; /* Isso faz a imagem cobrir toda a área da section */
+    background-position: center; /* Isso garante que a imagem fique centralizada */
+    /*background-attachment:fixed; /* A imagem de fundo vai rolar junto com o conteúdo */
+    height: 980px; /* Defina a altura da seção de acordo com o seu design */
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    color:var(--azul-escuro); /* Cor do texto para destacar sobre a imagem */
+    position: relative;
+    padding: 20px;
+   
+  }
+
+  .esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloco{
+    position: relative;
+   margin-top: 50px;
+   margin-left: 40px;
+    background-color: var(--azul-escuro);
+    padding: 15px;
+    width: 820px;
+    height:350px;
+    border-radius: 80px; /* Cantos arredondados */
+    box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); /* Sombra para destaque */
+
+  }
+.texto1{
+  position: absolute;
+  top:7%;
+  left: 3%;
+  color:var(--bege-claro);
+  line-height: 140%;
+  font-size: 41px;
+  text-align: left;
+  font-weight: 200;
+}
+.texto2{
+    line-height: 144%;
+    position: absolute;    /* Posiciona em relação ao bloco */
+    top: 10%;              /* Centraliza verticalmente */
+    left: 3%;             /* Centraliza horizontalmente */
+    color:var(--bege-claro);
+    font-size: 37px;       /* Tamanho da fonte */
+    text-align: left;    /* Centraliza o texto dentro do parágrafo */
+}
+  .direita {
+    top: 30px; /* Distância do topo */
+    right: 30px; /* Distância da direita */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente */
+    color: rgb(106, 25, 172); /* Texto branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    text-align: right;
+    height: 60px;position: relative;
+    margin-top: 50px;
+    margin-left: 40px;
+     background-color: var(--azul-escuro);
+     padding: 15px;
+     width: 300px;
+     height:35px;
+  
+}
+.direita h3{
+  color: var(--azul-medio);
+  font-size: 66px;
+  font-style: oblique;
+  margin-top: 2px;
+  
+}
   #segundaparte{
     text-align: left;
     margin-top: 100px;
