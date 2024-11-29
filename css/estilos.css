@@ -605,6 +605,146 @@ footer {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* Final página Golfinho*/
+
+/* Começo página Cavalos Marinhos */
+.pagina_secC, .segunda_secC{
+  width: 100%;
+  padding: 10px;
+}
+.primeira_secC{
+  display: flex;
+  /*  background-color: var(--azul-marinho); */
+  margin: 0;
+  height: 650px;
+  /* width: 100%; */
+  gap: 150px;
+  align-items: center;
+}
+.caixa-textoC{
+  background-color: var(--azul-escuro);
+  color: var(--bege-claro); /*cor da fonte*/
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); /* Sombra para destaque */
+  width: 36%;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 120px;
+  text-align: left;
+  line-height: 120%;
+}
+.tituloTextoC{
+  font-size: 190%;
+  text-align: center;
+}
+.textoC{
+  font-size: 92%;
+  margin: 0;
+}
+.caixa-imagemC{
+  line-height: 170%;
+  margin-left: 25px;
+
+}
+.caixa-imagemC h1{
+  color: var(--azul-marinho);
+  font-size: 260%;
+  margin: 0;
+  margin-left: 5px;
+}
+.titulo-cavalos{
+  margin-top: 230px;
+  margin-left: 40px;
+}
+.caixa-imagemC p{
+  color: var(--azul-escuro);
+  font-size: 120%;
+  margin-top: 0;
+}
+.imagem-cavalos img{
+  width: 70%;
+  height: 70%;
+  margin-left: 120px;
+  margin-bottom: 220px;
+}
+.segunda_secC{
+  display: flex;
+  min-height: 700px; 
+  margin: 0;
+  height: 700px;
+  padding: 5px 0;
+  background-color: var(--azul-escuro);
+  text-align: center;
+}
+.segunda_secC h1{
+  color: var(--bege-claro);
+  font-size: 350%;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.containerC {
+  display: flex;
+  background-color: var(--azul-escuro);
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px;
+  width: 100%;
+}
+.boxImagemC h2 {
+  font-size: 24px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.boxImagemC {
+  display: inline-block;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: var(--bege-claro);
+  
+}
+.img1Cavalos, .img2Cavalos {
+  width: 45%; 
+  display: inline; 
+}
+.img1Cavalos img{
+  height: 320px; 
+  display: inline;
+}
+.img2Cavalos img{
+  height: 320px; 
+  display: inline;
+}
+.boxImagemC img {
+  width: 45%;
+  max-width: px; 
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+#tituloSecC{
+  font-size: 330%;
+  margin-bottom: 150px;
+}
+
+.textoCavalos {
+  height: 555px;
+  width: 60%;
+  background-color: var(--bege-claro); /* Fundo branco */
+  color: var(--azul-escuro);
+  padding: 15px;
+  margin: 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Final página Cavalos Marinhos */
