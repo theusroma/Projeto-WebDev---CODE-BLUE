@@ -10,11 +10,46 @@
 </head>
 <body>
     <!-- O menu será injetado aqui -->
-    <div class="menu"></div>
-
     <main>
-        <h1>Quero doar</h1>
-        <p>A CodeBlue é uma organização que...</p>
+    <div class="menu"></div>
+        <div class="conteudoDoar">
+            <div class="formulario">
+                <h1>JUNTE-SE A NÓS</h1>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input id="inputNome" type="text" id="nome">
+
+                    <label for="email">Email:</label>
+                    <input id="inputEmail" type="email" id="email">
+
+                    <label for="message">Nos conte um pouco, porque quer ser um Bluer?</label>
+                    <textarea id="mensagem" rows="4"></textarea>
+
+                    <label for="role">Doar ou ser Bluer?</label>
+                    <select id="opcao">
+                        <option value="">Selecione uma opção</option>
+                        <option value="doar">Doar</option>
+                        <option value="bluer">Bluer</option>
+                    </select>
+                    <label for="checkbox">
+                    <input type="checkbox" id="termos">
+                    Concordo com os termos da política de privacidade</label>
+
+                    <button id="botaoEnviar" type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="doarBluer">
+                <div class="escritos">
+                    <p><i>Be a </i><b id="bluer">B L U E R</b></p>
+                    <p><b>É inovar a <i>vida</i> com a tecnologia.</b></p>
+                    <p><b>É transformar desafios em <i>soluções</i>.</b></p>
+                    <p><b>É <i>cuidar</i> do que importa.</b></p>
+                    <p><b>É ser <i>Azul</i>.</b></p>
+                </div>
+                <button id="botaoDoar" onclick="doar()">Doar</button>
+            </div>
+        </div>
+        
     </main>
 
     <!-- O footer será injetado aqui -->
