@@ -159,28 +159,25 @@ font-weight: 200;
   text-align: left;    /* Centraliza o texto dentro do parágrafo */
 }
 .direita {
-  top: 30px; /* Distância do topo */
-  right: 30px; /* Distância da direita */
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente */
-  color: rgb(106, 25, 172); /* Texto branco */
-  padding: 10px 15px; /* Espaçamento interno */
+  padding: 10px; /* Espaçamento interno */
   text-align: right;
-  height: 60px;position: relative;
-  margin-top: 50px;
-  margin-left: 40px;
-   background-color: var(--azul-escuro);
-   padding: 15px;
-   width: 300px;
-   height:35px;
-
-}
+  margin-bottom: 150px;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 300px;
+  line-height: 1px;
+  
 .direita h3{
-color: var(--azul-medio);
-font-size: 66px;
-font-style: oblique;
-margin-top: 2px;
-
+  color: var(--azul-medio);
+  font-size: 66px;
+  font-style: oblique;
+  margin-top: 2px;
 }
+.direita p{
+  color: rgb(106, 25, 172);
+  margin: 0;
+}
+  
 #segundaparte{
   text-align: left;
   margin-top: 100px;
