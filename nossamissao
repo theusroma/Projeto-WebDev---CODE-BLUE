@@ -1,0 +1,36 @@
+
+    <section class="ods14po">
+        <div class="mission">
+            <H1 id="nossamissao">NOSSA MISSAO</H1>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+.ods14po{
+  height: 650px; 
+  width: 100%;
+  margin: 0;
+  background-color: var(--azul-escuro);
+  text-align: center;
+  color: var(--bege-medio);
+  /* border: #010f29 solid;   tirar borda dps */
+  }
+
+  .mission{
+    border: var(--bege-medio) solid;
+
+  }
+
+  #nossamissao{
+    font-size: 300%;
+  }
