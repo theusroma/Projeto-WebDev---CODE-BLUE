@@ -1167,14 +1167,9 @@ text-align: center;
   font-size: 1.2em;
 }
 
-
-
 /* SOBRE NOS ========================================================== */
 
-
-
 /* Layout principal */
-
 
 .sobre-nos {
   display: flex;
@@ -1189,13 +1184,6 @@ text-align: center;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.imagem-fundo {
-  width: 100%; /* Reduz a imagem para não preencher 100% da metade */
-  height: 100%;
-
-  object-fit: cover; /* Faz a imagem cobrir a área proporcionalmente */
 }
 
 /* Metade direita */
@@ -1226,11 +1214,64 @@ text-align: center;
   width: 80%;
   height: auto;
   object-fit: cover; /* Ajusta a imagem proporcionalmente */
-  border-radius: 100px; /* Deixa as fotos com bordas arredondadas */
-  
+  border-radius: 100px; /* Deixa as fotos com bordas arredondadas */  
 }
-
 
 #foto4{
   width: 100%;
 }
+/* Início FOOTER */
+footer {
+  width: 100%;
+  height: 250px;
+  background-image: url('background.jpg'); /* Imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  color: var(--bege-escuro); /* Cor do texto */
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: auto; /* Empurra o footer para o final */
+}
+
+.footer-container {
+  width: 20%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--azul-escuro);
+}
+
+.slogan {
+  font-size: 60px;
+  font-weight: bold;
+  width: 1000px;
+  margin-top: 270px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Destaque no texto */
+  color: var(--azul-escuro);
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  color: var(--azul-escuro); /* Cor dos links */
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline;
+  
+}
+
+.footer-links a:hover {
+  color: var(--turquesa); /* Cor de destaque ao passar o mouse */
+}
+/* Fim FOOTER */
+
