@@ -1,0 +1,67 @@
+
+  /* SOBRE NOS ========================================================== */
+  
+  
+  
+  /* Layout principal */
+  
+  
+  .sobre-nos {
+    display: flex;
+    height: 100vh; /* Ocupa toda a altura da tela */
+  }
+  
+  /* Metade esquerda */
+  .metade-esquerda {
+    flex: 1; /* Ocupa metade da largura */
+    background-color: var(--bege-claro); /* Fundo azul */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .imagem-fundoo {
+    width: 100%; /* Reduz a imagem para não preencher 100% da metade */
+    height: 100%;
+  
+    object-fit: cover; /* Faz a imagem cobrir a área proporcionalmente */
+  }
+  
+  /* Metade direita */
+  .metade-direita {
+    flex: 1; /* Ocupa a outra metade */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as linhas de fotos */
+    padding: 20px;
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+  
+  .linha {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as fotos */
+  }
+  
+  .foto {
+    width: 60%; /* Cada foto ocupa 45% da linha */
+  }
+  
+  .foto img {
+    /* margin-left: 40px; */
+    width: 80%;
+    height: auto;
+    object-fit: cover; /* Ajusta a imagem proporcionalmente */
+    border-radius: 100px; /* Deixa as fotos com bordas arredondadas */
+    
+  }
+  
+  
+  #foto4{
+    width: 100%;
+  }
+  

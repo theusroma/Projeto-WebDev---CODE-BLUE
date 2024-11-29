@@ -1,0 +1,154 @@
+
+  /* Começo página Golfinhos */
+  .pagina-golfinho {
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--bege-claro);
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: row; /* Alinha os elementos lado a lado */
+    gap: 250px; /* Espaçamento entre o golfinho e o texto */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  
+  #sub-titulog{
+    color: var(--azul-medio);
+    font-size: 100%;
+    margin: 0;
+    margin-left: 32.5px;
+  }
+  .titulo-golfinho{
+    color: var(--azul-marinho);
+    line-height: 40%;
+    font-size: 180%;
+    margin-bottom:10px;
+    margin-left: 30px;
+  }
+  
+  .caixa-imagemg{
+    font-size: 100%;
+    color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; 
+  }
+  
+  .imagem-golfinho img {
+    width: 400%;
+    max-width: 400px; /* Limita o tamanho máximo */
+    height: auto;
+  }
+  
+  .caixa-textog{
+    width: 50%; /* Ocupa 50% da largura disponível */
+    background-color: var(--azul-marinho);
+    color: var(--bege-claro);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); /* Sombra */
+    font-size: medium;
+    margin-left: 40px; /* Adicione esta linha ou ajuste o valor */
+  }
+  
+  
+  /* Seção segunda-parte */
+  
+  .segunda-parteg{
+    height: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--azul-escuro);
+    gap: 20px; /* Espaçamento entre os elementos */
+  }
+  
+  /* Lista de golfinhos ameaçados */
+  .golfinhos-extincao {
+    flex: 1; /* Ocupa uma parte proporcional do espaço */
+    padding: 10px;
+    background-color: var(--azul-marinho);
+    color: var(--bege-claro);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .golfinhos-extincao h2 {
+    margin-bottom: 10px;
+    font-size: larger;
+    text-align: center;
+    color: var(--turquesa);
+  }
+  
+  .golfinhos-extincao ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .golfinhos-extincao li {
+    font-size: large;
+    line-height: 1.5;
+  }
+  
+  /* Imagens dos golfinhos */
+  .caixa-imagensg{
+    flex: 1; /* Ocupa uma parte proporcional do espaço */
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem de linha */
+    justify-content: space-between; /* Distribui as imagens igualmente */
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .caixa-imagensg img {
+    width: 48%; /* Ajusta a largura das imagens para caberem duas em cima */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  #boto{
+    width: 100%;
+  }
+  
+  
+  /* Terceira parte*/
+  
+  .terceira-parteg {
+    height: 400px;
+    display: flex;
+    flex-direction: row; /* Organiza os elementos em coluna */
+    gap: 20px;
+    margin-top: 20px;
+    background-color: var(--azul-escuro);
+    padding: 20px;
+    position: relative; /* Necessário para a posição do elemento no canto */
+  }
+  
+  #caixa-textoG {
+    height: auto;
+    width: 100%;
+    background-color: var(--azul-marinho);
+    color: var(--bege-claro);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); /* Sombra */
+    font-size: medium;
+  }
+  
+  .terceira-parteg div img {
+    margin-left: 10px;
+    width: 100%;
+    max-width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Final página Golfinho*/
