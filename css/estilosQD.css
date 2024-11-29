@@ -1,4 +1,3 @@
-
   /* Início página Quero Doar */
   
   .conteudoDoar{
@@ -13,7 +12,7 @@
   
   .formulario{
     max-width: 520px;
-    height: 560px;
+    height: 80%;
     background-color: var(--azul-escuro);
     border-radius: 8px;
     padding: 20px;
@@ -33,7 +32,7 @@
     margin-top: 2px;
   }
   
-  .formulario label, textarea{
+  .formulario label{
     width: 100%;
     color: var(--bege-claro);
     font-size: 115%;
@@ -48,10 +47,18 @@
   #inputEmail, #inputNome {
     width: 100%;
     height: 35px;
-    color: var(--bege-claro);
+    color: var(--azul-escuro);
     border-radius: 12px;
     border: solid var(--bege-claro);
   }
+  #inputMessage{
+    width: 100%;
+    height: 120px;
+    color: var(--azul-escuro);
+    border-radius: 12px;
+    border: solid var(--bege-claro);
+  }
+  
   .form-container input[type="checkbox"] {
     width: 20px; 
     height: 20px;
@@ -103,3 +110,5 @@
   #bluer{
     color: var(--turquesa);
   }
+  
+  /* Fim página Quero Doar */
