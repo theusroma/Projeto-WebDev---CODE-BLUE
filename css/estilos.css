@@ -879,7 +879,6 @@ footer {
   <!-- Minha parteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
 
 
-
 /* Começo página Tartaryga */
 
 .primeira_secT{
@@ -1167,9 +1166,14 @@ text-align: center;
   font-size: 1.2em;
 }
 
+
+
 /* SOBRE NOS ========================================================== */
 
+
+
 /* Layout principal */
+
 
 .sobre-nos {
   display: flex;
@@ -1184,6 +1188,13 @@ text-align: center;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.imagem-fundoo {
+  width: 100%; /* Reduz a imagem para não preencher 100% da metade */
+  height: 100%;
+
+  object-fit: cover; /* Faz a imagem cobrir a área proporcionalmente */
 }
 
 /* Metade direita */
@@ -1214,12 +1225,16 @@ text-align: center;
   width: 80%;
   height: auto;
   object-fit: cover; /* Ajusta a imagem proporcionalmente */
-  border-radius: 100px; /* Deixa as fotos com bordas arredondadas */  
+  border-radius: 100px; /* Deixa as fotos com bordas arredondadas */
+  
 }
+
 
 #foto4{
   width: 100%;
 }
+
+
 /* Início FOOTER */
 footer {
   width: 100%;
