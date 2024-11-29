@@ -7,6 +7,9 @@
     align-items: center;
     padding: 40px;
     background-color: var(--bege-claro);
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha se necessário */
+    overflow: hidden
   }
   
   .intro {
@@ -27,7 +30,7 @@
   }
   .titulo-golfinho{
     color: var(--azul-marinho);
-    line-height: 40%;
+    line-height: 170%;
     font-size: 180%;
     margin-bottom:10px;
     margin-left: 30px;
@@ -58,6 +61,7 @@
     font-size: medium;
     margin-left: 40px; /* Adicione esta linha ou ajuste o valor */
   }
+  
   
   
   /* Seção segunda-parte */
@@ -150,5 +154,153 @@
     max-width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   }
+  @media (max-width: 600px) {
+    .pagina-golfinho {
+      height: auto; /* Ajusta a altura da página para que ela se ajuste ao conteúdo */
+      padding: 20px; /* Reduz o padding */
+      flex-direction: column; /* Empilha os elementos verticalmente */
+    }
   
-  /* Final página Golfinho*/
+    .intro {
+      flex-direction: column; /* Torna a direção dos itens vertical */
+      gap: 20px; /* Ajusta o espaçamento entre os elementos */
+    }
+  
+    .caixa-imagemg {
+      width: 100%; /* A imagem ocupa toda a largura disponível */
+    }
+  
+    .caixa-textog {
+      width: 100%; /* Texto ocupa toda a largura */
+      margin-left: 0; /* Remove o deslocamento à esquerda */
+    }
+  
+    .imagem-golfinho img {
+      width: 100%; /* Imagem ocupa toda a largura */
+      max-width: 100%; /* Impede que a imagem ultrapasse a largura */
+    }
+  
+    .segunda-parteg {
+      flex-direction: column; /* Organiza os elementos em coluna */
+      height: auto; /* Ajusta a altura */
+    }
+  
+    .golfinhos-extincao, .caixa-imagensg {
+      width: 100%; /* Faz as seções ocuparem 100% da largura */
+      margin-bottom: 20px; /* Adiciona espaço entre as seções */
+    }
+  
+    .caixa-imagensg img {
+      width: 100%; /* As imagens ocupam toda a largura */
+      margin-bottom: 10px; /* Adiciona espaço entre as imagens */
+    }
+  
+    .terceira-parteg {
+      flex-direction: column; /* Organiza os elementos em coluna */
+      height: auto; /* Ajusta a altura */
+      padding: 10px; /* Ajusta o padding */
+    }
+  
+    #caixa-textoG {
+      width: 100%; /* Caixa de texto ocupa 100% da largura */
+    }
+  
+    .terceira-parteg div img {
+      max-width: 100%; /* Imagens não ultrapassam a largura disponível */
+    }
+  }
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .pagina-golfinho {
+      padding: 30px; /* Ajusta o padding */
+    }
+  
+    .intro {
+      flex-direction: row; /* Mantém os itens lado a lado */
+      gap: 50px; /* Ajusta o espaçamento */
+    }
+  
+    .caixa-imagemg {
+      width: 50%; /* Mantém a proporção */
+    }
+  
+    .caixa-textog {
+      width: 50%; /* Mantém a proporção */
+      margin-left: 20px; /* Ajusta o espaçamento */
+    }
+  
+    .imagem-golfinho img {
+      width: 100%; /* Ajusta a largura da imagem para preencher o espaço */
+      max-width: 100%; /* Impede que a imagem ultrapasse a largura */
+    }
+  
+    .segunda-parteg {
+      flex-direction: row; /* Deixa os itens lado a lado */
+      justify-content: space-between; /* Ajusta o espaçamento */
+    }
+  
+    .golfinhos-extincao, .caixa-imagensg {
+      width: 48%; /* Ajusta a largura */
+    }
+  
+    .caixa-imagensg img {
+      width: 48%; /* Mantém 2 imagens lado a lado */
+    }
+  
+    .terceira-parteg {
+      flex-direction: row; /* Mantém os itens lado a lado */
+    }
+  
+    .terceira-parteg div img {
+      max-width: 450px; /* Ajusta a largura das imagens */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .pagina-golfinho {
+      height: 680px; /* Mantém a altura original */
+      padding: 40px; /* Mantém o padding original */
+      flex-direction: row; /* Coloca os elementos lado a lado */
+    }
+  
+    .intro {
+      flex-direction: row; /* Mantém os itens lado a lado */
+      gap: 250px; /* Mantém o espaçamento original */
+    }
+  
+    .caixa-imagemg {
+      width: 50%; /* Mantém a largura em 50% */
+    }
+  
+    .caixa-textog {
+      width: 50%; /* Mantém a largura em 50% */
+      margin-left: 40px; /* Mantém o deslocamento */
+    }
+  
+    .imagem-golfinho img {
+      width: 400%; /* Tamanho original da imagem */
+      max-width: 400px; /* Limita o tamanho máximo */
+    }
+  
+    .segunda-parteg {
+      justify-content: space-between; /* Mantém o espaçamento entre os elementos */
+    }
+  
+    .golfinhos-extincao, .caixa-imagensg {
+      width: 48%; /* Ajusta a largura para 48% */
+    }
+  
+    .caixa-imagensg img {
+      width: 48%; /* Duas imagens lado a lado */
+    }
+  
+    .terceira-parteg {
+      flex-direction: row; /* Mantém os elementos lado a lado */
+      gap: 20px; /* Ajusta o espaçamento */
+    }
+  
+    .terceira-parteg div img {
+      width: 500px; /* Ajusta o tamanho das imagens */
+      max-width: 500px; /* Limita o tamanho máximo */
+    }
+  }
+  
