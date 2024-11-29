@@ -874,3 +874,363 @@ footer {
   color: var(--turquesa);
 }
 
+
+
+  <!-- Minha parteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+
+
+
+/* Começo página Tartaryga */
+
+.primeira_secT{
+display: flex;
+margin: 0;
+height: 650px;
+gap: 70px;
+align-items: center;
+}
+
+.textotarta{
+background-color: var(--bege-escuro);
+color: var(--bege-claro); /*cor da fonte*/
+padding: 20px;
+border-radius: 20px;
+
+width: 36%;
+height: 490px;
+margin-left: 50px;
+margin-bottom: 30px;
+text-align: left;
+
+/* border: #010f29 solid;   tirar borda dps */
+}
+.tituloTextoT{
+margin: 0;
+font-size: 190%;
+text-align: center;
+/* border: #010f29 solid;   tirar borda dps */
+margin-bottom: 40px;
+}
+.textoT{
+font-size: 92%;
+margin: 0;
+line-height: 2.0;
+/* border: #010f29 solid;   tirar borda dps */
+}
+.caixa_imagemT{
+/* padding-right: 300px; */
+line-height: 170%;
+/* border: #010f29 solid;   tirar borda dps */
+padding-top: 40px ;
+margin-left: 50px;
+}
+.caixa_imagemT h1{
+color: var(--azul-marinho);
+font-size: 260%;
+margin: 0;
+margin-left: 5px;
+/* border: #010f29 solid;   tirar borda dps */
+/* margin */
+}
+.titulo_tarta{
+margin-bottom: 15px;
+margin-left: 80px;
+
+}
+.caixa_imagemT p{
+color: var(--azul-escuro);
+font-size: 120%;
+margin-top: 0;
+padding-right: 90px;
+}
+.imagem_tarta img{
+width: 90%;
+margin-left: 70px;
+margin-bottom: 110px;
+}
+
+
+
+
+/* COMECO DA SEGUNDA SECAO */
+.segunda_secT{
+min-height: 500px; 
+margin: 0;
+background-color: var(--azul-escuro);
+text-align: center;
+/* border: #010f29 solid;   tirar borda dps */
+}
+
+.sec_tarta2 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative; /* Para permitir que a tabela fique sobre a imagem */
+}
+
+.texto_tarta2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bege-claro);
+  color: var(--azul-escuro);
+  border-radius: 20px;
+  height: 90%;
+  text-align: left;
+  margin-top: 30px;
+  margin-right: 700px;
+  margin-left: 30px;
+}
+
+.texto_tarta2 h1 { 
+  font-size: 2.5em;
+  color: var(--bege-escuro);
+  margin: 0; /* Remove toda a margem ao redor do título */
+  padding: 0; /* Remove qualquer padding que possa interferir */
+  text-align: left;
+  padding-left: 40px;
+
+}
+
+.texto_tarta2 ul {
+  margin: 0; /* Remove espaço ao redor da lista */
+  padding: 0 0 0 20px; /* Ajusta o recuo dos marcadores */
+  list-style-position: outside;
+  padding-left: 40px;
+}
+
+.texto_tarta2 ul li {
+  font-size: 1.2em;
+  line-height: 1.9; /* Reduz ainda mais o espaçamento entre os itens */
+  color: var(--azul-escuro);
+  
+}
+
+
+
+
+.texto_tarta2 p {
+  font-size: 1.2em;
+  color: var(--azul-escuro);
+  line-height: 2.8;
+   /* margin-bottom: 3px;  */
+  /* border: white solid;    */
+  margin-top: 0px;
+}
+
+
+
+
+#subtitulo{
+  color: var(--bege-escuro);
+  padding-left: 30px;
+}
+
+#subtitulotexto{
+  padding-left: 30px;
+  padding-right: 20px;
+  line-height: 1.8
+
+}
+
+#tortuga{
+  border-radius: 40px; /* Deixa as fotos com bordas arredondadas */
+
+}
+
+#lixo{
+  color: var(--azul-escuro);
+}
+.tabelinha {
+  position: absolute; /* A tabela ficará sobre a imagem */
+  top: 5%; /* Ajuste a posição vertical, se necessário */
+  right: 1%; /* Aumente o valor para mover a tabela mais para a direita */
+  transform: translateX(0); /* Remover o centramento horizontal */
+  background-color: var(--bege-claro); /* Fundo translúcido */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.tabela-sobre-imagem {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.tabela-sobre-imagem th, .tabela-sobre-imagem td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid var(--azul-escuro);
+}
+
+.tabela-sobre-imagem th {
+  background-color: var(--azul-escuro);
+  color: var(--bege-claro);
+}
+
+.tabela-sobre-imagem td {
+  background-color: var(--bege-claro);
+  color: var(--azul-escuro);
+}
+
+
+
+
+/* Terceira Section */
+.terceira_secT {
+  /* background-color: black; Cor de fundo temporária */
+  /* background-image: url('img/fundo-terceira.jpg'); */
+  background-image: url('/img/fundo3.png');
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  height: 600px;
+}
+
+/* Content é um container para alinhar fotos e retângulo azul */
+.contentt {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  
+}
+
+/* Container das fotos */
+.fotoss {
+  display: flex;
+  flex-wrap: wrap; /* Garante que as fotos podem se ajustar */
+  width: 65%; /* A largura das fotos ocupa 65% da tela */
+  margin-left: 90px;
+  padding: 40px;
+}
+
+/* Fotos de cima (duas fotos lado a lado) */
+.fotoss {
+  width: 36%; /* Mantém o tamanho anterior das fotos */
+  margin-right: 13%; /* Adiciona um pequeno espaçamento entre as duas fotos de cima */
+  margin-bottom: 30px; 
+  /* border: black solid; */
+}
+
+.fotoss img {
+  width: 100%; /* As imagens ocupam toda a largura do bloco */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Faz a imagem cobrir completamente o bloco */
+}
+
+/* Foto de baixo ocupa toda a largura */
+.baaixo {
+  width: 40%; /* A foto de baixo ocupa toda a largura disponível */
+}
+
+.baaixo img {
+  width: 100%; /* A imagem ocupa 100% da largura */
+  height: auto;
+}
+#porra{
+  width: 60%;
+  align-items: center;
+  margin-left: 350px;
+  border-radius: 40px; /* Deixa as fotos com bordas arredondadas */
+
+}
+
+#porraa{
+  width: 130%;
+  margin-right: 400px;
+  border-radius: 40px; /* Deixa as fotos com bordas arredondadas */
+ 
+}
+
+/* Retângulo azul */
+.retangulo_azul {
+  width: 30%; /* O retângulo ocupa 30% da largura */
+  height: 100%;
+  background-color: var(--azul-escuro); /* Cor de fundo azul */
+  color: var(--bege-claro); /* Cor do texto */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding-left: 40px;
+}
+
+.retangulo_azul p {
+  font-size: 1.2em;
+}
+
+
+
+/* SOBRE NOS ========================================================== */
+
+
+
+/* Layout principal */
+
+
+.sobre-nos {
+  display: flex;
+  height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+/* Metade esquerda */
+.metade-esquerda {
+  flex: 1; /* Ocupa metade da largura */
+  background-color: var(--bege-claro); /* Fundo azul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imagem-fundo {
+  width: 100%; /* Reduz a imagem para não preencher 100% da metade */
+  height: 100%;
+
+  object-fit: cover; /* Faz a imagem cobrir a área proporcionalmente */
+}
+
+/* Metade direita */
+.metade-direita {
+  flex: 1; /* Ocupa a outra metade */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre as linhas de fotos */
+  padding: 20px;
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre as fotos */
+}
+
+.foto {
+  width: 60%; /* Cada foto ocupa 45% da linha */
+}
+
+.foto img {
+  /* margin-left: 40px; */
+  width: 80%;
+  height: auto;
+  object-fit: cover; /* Ajusta a imagem proporcionalmente */
+  border-radius: 100px; /* Deixa as fotos com bordas arredondadas */
+  
+}
+
+
+#foto4{
+  width: 100%;
+}
