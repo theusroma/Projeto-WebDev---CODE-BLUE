@@ -14,6 +14,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #eae1c8;
+    box-sizing: border-box; /* Inclui padding e border no cálculo de width/height */
   }
 
   /* Navbar */
@@ -105,8 +106,8 @@ body {
   }
 
   .imagem-fundo{
-  background-image: url('../img/aqua.svg');
-  background-size: cover; /* Isso faz a imagem cobrir toda a área da section */
+    background-image: url('../img/aqua.svg');
+    background-size: cover; /* Isso faz a imagem cobrir toda a área da section */
     background-position: center; /* Isso garante que a imagem fique centralizada */
     /*background-attachment:fixed; /* A imagem de fundo vai rolar junto com o conteúdo */
     height: 980px; /* Defina a altura da seção de acordo com o seu design */
@@ -127,8 +128,8 @@ body {
 
   .bloco{
     position: relative;
-   margin-top: 50px;
-   margin-left: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
     background-color: var(--azul-escuro);
     padding: 15px;
     width: 820px;
@@ -192,7 +193,7 @@ body {
     color: #094c93;
     font-size: 350%;
     margin-right: 10%;
-       /* background-color: #3cbcc7;    */
+    /* background-color: #3cbcc7;    */
     /* padding-top: 10%; */
     letter-spacing: -1px; /* Espaçamento de 2 pixels entre as letras */
     line-height: 108%;
@@ -200,13 +201,11 @@ body {
   }
 
   #imagemonda{
-
     width: 40%;
       /* background-color: blue;     */
     padding-bottom: 0%;
     margin-top: 1%;
     margin-left: 50px;
-      
   }
 
   #codebluetexto{
@@ -216,7 +215,7 @@ body {
     font-weight: 300;
     font-style: italic;
     letter-spacing: 0px; /* Espaçamento de 2 pixels entre as letras */
-}
+  }
 
 /* Começo página Baleias */
 .pagina_secB, .segunda_secB{
