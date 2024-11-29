@@ -823,7 +823,7 @@ footer {
   height: 35px;
   color: var(--bege-claro);
   border-radius: 12px;
-  border: solid rgb(0, 0, 0);
+  border: solid var(--bege-claro);
 }
 .form-container input[type="checkbox"] {
   width: 20px; 
