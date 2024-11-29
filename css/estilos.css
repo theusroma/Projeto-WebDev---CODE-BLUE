@@ -771,3 +771,109 @@ footer {
   margin-bottom: 150px;
 }
 /* Final página Cavalos Marinhos */
+
+/* Início página Quero Doar */
+
+.conteudoDoar{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 115px; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario{
+  max-width: 520px;
+  height: 560px;
+  background-color: var(--azul-escuro);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.formulario h1{
+  color: var(--bege-claro);
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 200%;
+}
+
+.formulario label{
+  display: block;
+  margin: 10px;
+  margin-top: 2px;
+}
+
+.formulario label, textarea{
+  width: 100%;
+  color: var(--bege-claro);
+  font-size: 115%;
+  border-radius: 12px;
+}
+.formulario select{
+  width: 80%;
+  color: var(--azul-escuro);
+  font-size: 115%;
+  margin-bottom: 20px;
+}
+#inputEmail, #inputNome {
+  width: 100%;
+  height: 35px;
+  color: var(--bege-claro);
+  border-radius: 12px;
+  border: solid rgb(0, 0, 0);
+}
+.form-container input[type="checkbox"] {
+  width: 20px; 
+  height: 20px;
+  accent-color: #0044cc; 
+  cursor: pointer; 
+  
+}
+#botaoEnviar{
+  width: 160px; 
+  height: 50px;
+  border-radius: 12px;
+  border: solid #af91d0;
+  background-color: #af91d0;
+  color: var(--azul-escuro);
+  margin-left: 180px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#botaoEnviar a:hover{
+  border: solid var(--azul-marinho);
+  background-color: var(--azul-marinho);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#botaoDoar{
+  width: 130px; 
+  height: 45px;
+  border-radius: 20px;
+  border: solid var(--azul-escuro);
+  background-color: var(--azul-escuro);
+  color: var(--bege-claro);
+  margin-left: 370px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.doarBluer{
+  max-width: 300px;
+  flex: 1;
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 100px;
+  font-size: 160%;
+  color: var(--azul-escuro);
+}
+.escritos{
+  width: 500px;
+  
+}
+#bluer{
+  color: var(--turquesa);
+}
+
