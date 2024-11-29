@@ -1,6 +1,16 @@
 
   /* Começo página Baleias */
-  .pagina_secB, .segunda_secB{
+  * {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    }
+    
+    header, main, footer {
+      max-width: 100%;
+    }
+
+   .pagina_secB, .segunda_secB{
     width: 100%;
     padding: 10px;
   }
@@ -8,21 +18,25 @@
     display: flex;
     /*  background-color: var(--azul-marinho); */
     margin: 0;
-    height: 650px;
+    flex-wrap: wrap;
+    height: auto;
     /* width: 100%; */
     gap: 70px;
     align-items: center;
+    justify-content: center;
   }
   .caixa-textoB{
     background-color: var(--azul-escuro);
     color: var(--bege-claro); /*cor da fonte*/
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); /* Sombra para destaque */
-    width: 36%;
-    height: 490px;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); 
+    width: 100%;
+    max-width: 480px;
+    height: 70%;
+    overflow-wrap: break-word; /* quebra palavras grandes*/
+    word-break: break-word; /* quebra palavras para evitar vazamento */
+    margin: 20px;
     text-align: left;
   }
   .tituloTextoB{
@@ -36,6 +50,9 @@
   }
   .caixa-imagemB{
     line-height: 170%;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 10px;
   }
   .caixa-imagemB h1{
     color: var(--azul-marinho);
@@ -52,24 +69,24 @@
     margin-top: 0;
   }
   .imagem-baleia img{
-    width: 110%;
-    height: 140%;
-    margin-left: 40px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 70px;
   }
   .segunda_secB{
-    min-height: 700px; 
+    min-height: 550px; 
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: var(--azul-escuro);
     text-align: center;
   }
   .segunda_secB h1{
     color: var(--bege-claro);
-    font-size: 350%;
+    font-size: 2.5em;
     font-weight: 300;
     margin: 0;
-    margin-top: 12px;
   }
   .segunda_secB p{
     color: var(--bege-claro);
@@ -80,8 +97,8 @@
     font-size: 150%;
     margin-top: 10px;
     margin-left: 0px;
-    height: 38px;
-    width: 292px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 5px;
   }
   .segunda_secB #baleiaF, #baleiaB{
@@ -90,8 +107,8 @@
     font-size: 150%;
     margin-top: 10px;
     margin-left: 0px;
-    height: 38px;
-    width: 294px;
+    width: 100%;
+    max-width: 350px;
     border-radius: 5px;
   }
   .segunda_secB h1, p{
@@ -100,22 +117,21 @@
   }
   .galeriaB{
     display: flex;
-    width: 100%;
-    height: 500px;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    gap: 20px;
   }
   .fotosB {
     display: flex;
     /* background-color: var(--azul-marinho); */
     color: var(--bege-claro);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
-    width: 22%;
-    height: 400px;
+    width: 45%;
+    max-width: 290px;
+    height: auto;
     text-align: center;
     flex-direction: column;
-    justify-content: space-between;
   }
   .fotosB img{
     width: 100%;
@@ -124,17 +140,24 @@
   }
   .fotosB p{
     color: var(--bege-medio);
-    font-size: 120%;
+    font-size: 100%;
     margin-top: 10px;
     margin-bottom: 0;
+    width: 45%;
+    max-width: 290px;
   }
   .terceira_secB{
     background-color: var(--azul-escuro);
     display: flex;
-    height: 600px;
-  
+    flex-wrap: wrap;
     border: 5px solid var(--bege-claro); 
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+    align-items: flex-start;
   }
+  
+
   .containerB {
     display: flex;
     background-color: var(--azul-escuro);
@@ -145,35 +168,146 @@
   }
   .tSec_boximagem h2 {
     font-size: 24px;
-    height: 50px;
     margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+    word-wrap: break-word; 
+    height: 50px;
   }
   .tSec_boximagem {
     /* background-color: var(--azul-marinho); */
     padding: 10px;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    width: 40%;
+    width: 100%;
+    max-width: 480px;
     text-align: center;
+    word-wrap: break-word;
     color: var(--bege-claro);
+    flex-direction: column;
+  }
+  .tSec_boximagem, .tSec_texto {
+    flex: 1 1 100%;
+    max-width: 600px;
+    box-sizing: border-box;
   }
   
   .tSec_boximagem img {
-    width: 100%;
-    max-width: px; 
+    width: 100%; 
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
   }
   
   .tSec_texto {
-    width: 60%;
-    background-color: var(--bege-claro); /* Fundo branco */
-    color: var(--azul-escuro);
-    padding: 15px;
-    margin: 0;
+    background-color: var(--bege-claro);
+    color: var(--azul-escuro); /*cor da fonte*/
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    box-shadow: 0px 4px 6px rgba(7, 69, 128, 0.842); 
+    width: 100%;
+    max-width: 700px;
+    height: 70%;
+    overflow-wrap: break-word; /* quebra palavras grandes*/
+    word-break: break-word; /* quebra palavras para evitar vazamento */
+    margin: 20px;
+    text-align: left;
   }
+
+  /* Media Queries */
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+  .primeira_secB {
+      flex-direction: column;
+      height: auto;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .caixa-textoB, .caixa-imagemB {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .imagem-baleia img {
+      width: 100%;
+      height: auto;
+  }
+
+  .tituloTextoB {
+      font-size: 150%;
+  }
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+  .imagem-baleia img {
+    width: 90%; /* Reduz a imagem em telas menores */
+  }
+
+  .caixa-imagemB {
+    text-align: center; /* Centraliza a imagem e o texto */
+  }
+
+  .galeriaB {
+      flex-wrap: wrap;
+      height: auto;
+      gap: 15px;
+  }
+  .fotosB {
+      width: 45%;
+      height: auto;
+  }
+
+  .segunda_secB h1 {
+      font-size: 300%;
+  }
+
+  .tSec_boximagem, .tSec_texto {
+      width: 100%;
+  }
+
+  .tSec_boximagem h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .tSec_boximagem, .tSec_texto {
+    flex: 1 1 45%;
+  }
+  
+}
+  
+
+
+/* Ajustes para smartphones */
+@media (max-width: 480px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .segunda_secB h1 {
+      font-size: 220%;
+  }
+
+  .fotosB {
+      width: 100%;
+  }
+
+  .segunda_secB #baleiaC, #baleiaA, #baleiaF, #baleiaB {
+      width: 100%;
+  }
+
+  .tSec_boximagem h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+  .footer-links ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
