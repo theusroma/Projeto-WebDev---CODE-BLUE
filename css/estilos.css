@@ -218,6 +218,61 @@ margin-top: 2px;
   letter-spacing: 0px; /* Espaçamento de 2 pixels entre as letras */
 }
 
+footer {
+  background-color: var(--bege-claro); /* Cor do fundo */
+  color: var(--azul-escuro); /* Texto azul escuro */
+  border-top: 5px solid #003366; /* Linha azul no topo */
+  display: flex;
+  flex-wrap: wrap; /* Permitir quebra em telas menores */
+  gap: 20px;
+  padding: 20px 40px; /* Espaço interno adicional */
+  justify-content: space-between; /* Espaço entre logo e links */
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 120px; /* Ajuste o tamanho conforme necessário */
+  height: auto; /* Proporções mantidas */
+}
+
+.footer-fundo {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* A imagem de fundo vai rolar junto com o conteúdo */
+  min-height: 300px; /* Altura mínima, para garantir boa aparência */
+  flex: 1;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Espaço entre os itens */
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+  color: var(--azul-escuro); /* Azul escuro no hover */
+}
+
+#footer-copy {
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+
 /* Começo página Baleias */
 .pagina_secB, .segunda_secB{
   width: 100%;
