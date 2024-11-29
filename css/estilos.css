@@ -1139,6 +1139,11 @@
     border-radius: 40px; /* Deixa as fotos com bordas arredondadas */
   
   }
+
+ #pzinho{
+    line-height: 2.0;
+  }
+
   
   #porraa{
     width: 130%;
