@@ -1,39 +1,19 @@
-window.addEventListener('DOMContentLoaded', function() {
-    // Conteúdo do Menu
-    const menuHTML = `
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="LogoCB">
-                <img src="img/codeblue.svg" alt="Logo" />
-            </a>              
-            <ul>
-                <li><a href="sobrenos.html">Sobre Nós</a></li>
-                <li><a href="baleias.html">Baleias</a></li>
-                <li><a href="golfinhos.html">Golfinhos</a></li>
-                <li><a href="tartarugas.html">Tartarugas</a></li>
-                <li><a href="cavalosmarinhos.html">Cavalos-Marinhos</a></li>
-                <li><a href="querodoar.html">Quero Doar</a></li>
-            </ul>
-        </nav>
-    </header>
-    `;
+   /* BOTOES */
+    let env = document.getElementById("botaoEnviar");
+    let doe = document.getElementById("botaoDoar");
 
-    // Inserir o Menu em todos os elementos com a classe 'menu'
-    const menus = document.querySelectorAll('.menu');
-    menus.forEach(menu => {
-        menu.innerHTML = menuHTML;
-    });
+    doe.addEventListener("click", doar);
 
-    // Conteúdo do Footer
-    const footerHTML = `
-    <footer class="rodape">
-        <p>&copy;2024 - CodeBlue</p>
-    </footer>
-    `;
-
-    // Inserir o Footer em todos os elementos com a classe 'footer'
-    const footers = document.querySelectorAll('.footer');
-    footers.forEach(footer => {
-        footer.innerHTML = footerHTML;
-    });
-});
+    function doar(){
+        let chavePix = prompt("Por favor, insira sua chave Pix: ");
+        if(chavePix){
+            const quantidade = prompt("Por favor, insira a quantidade que deseja doar:");
+            if (quantidade) {
+                alert("Doação enviada com sucesso! Muito obrigado.");
+            } else {
+                alert("Doação cancelada.");
+            }
+        } else {
+            alert("Doação cancelada.");
+        }
+    }
