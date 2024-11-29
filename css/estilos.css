@@ -8,6 +8,14 @@
     --bege-medio: #dfc39d;
     --bege-escuro: #af956b;
   }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  header, main,footer{
+    max-width: 100%;
+  }
   
   /* fundo do site */
   body {
@@ -325,3 +333,163 @@
   .footer-links a:hover {
     color: var(--turquesa); /* Cor de destaque ao passar o mouse */
   }
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 5px;
+      margin: 0;
+    }
+  
+    .navbar ul li {
+      margin: 5px 0;
+    }
+  
+    .navbar ul li a {
+      font-size: 12px;
+    }
+  
+    .LogoCB img {
+      height: 40px; /* Reduz o tamanho da logo */
+    }
+  
+    #videoprincipal {
+      height: auto;
+    }
+  
+    .imagem-fundo {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      height: auto;
+    }
+  
+    .bloco {
+      width: 100%; /* Bloco ocupa toda a largura */
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 20px; /* Menos arredondado para telas pequenas */
+    }
+  
+    .texto1, .texto2 {
+      font-size: 18px; /* Fontes menores */
+      line-height: 120%;
+    }
+  
+    .direita h3 {
+      font-size: 24px;
+    }
+  
+    .direita p {
+      font-size: 14px;
+    }
+  
+    #segundaparte {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+  
+    #ondastexto {
+      font-size: 150%; /* Reduz tamanho do texto */
+      text-align: center;
+    }
+  
+    #imagemonda {
+      width: 80%;
+      margin-top: 20px;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .slogan {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .footer-links a {
+      font-size: 12px;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar ul li a {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  
+    #videoprincipal {
+      height: auto; /* Ajusta altura automaticamente */
+    }
+  
+    .imagem-fundo {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      height: auto;
+    }
+  
+    .esquerda, .direita {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .bloco {
+      width: 100%; /* Bloco ocupa toda a largura disponível */
+      height: auto;
+      margin-left: 0;
+      padding: 10px;
+    }
+  
+    .texto1, .texto2 {
+      font-size: 24px;
+      line-height: 120%;
+    }
+  
+    .direita h3 {
+      font-size: 36px;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-links a {
+      font-size: 14px;
+    }
+  
+    .slogan {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+  
+  
