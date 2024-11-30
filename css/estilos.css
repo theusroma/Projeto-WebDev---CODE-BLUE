@@ -18,12 +18,15 @@
   }
   
   /* fundo do site */
-  body {
+  body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #eae1c8;
     box-sizing: border-box; /* Inclui padding e border no cálculo de width/height */
+/* 
+    overflow-x: hidden; 
+    width: 100%;  */
   }
   
   
