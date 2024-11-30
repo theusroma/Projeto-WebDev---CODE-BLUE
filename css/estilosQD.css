@@ -1,114 +1,147 @@
-  /* Início página Quero Doar */
-  
-  .conteudoDoar{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: flex-start; 
-    gap: 115px; 
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .formulario{
-    max-width: 520px;
-    height: 80%;
-    background-color: var(--azul-escuro);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 60px;
-  }
-  
-  .formulario h1{
-    color: var(--bege-claro);
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 200%;
-  }
-  
-  .formulario label{
-    display: block;
-    margin: 10px;
-    margin-top: 2px;
-  }
-  
-  .formulario label{
-    width: 100%;
-    color: var(--bege-claro);
-    font-size: 115%;
-    border-radius: 12px;
-  }
-  .formulario select{
-    width: 80%;
-    color: var(--azul-escuro);
-    font-size: 115%;
-    margin-bottom: 20px;
-  }
-  #inputEmail, #inputNome {
-    width: 100%;
-    height: 35px;
-    color: var(--azul-escuro);
-    border-radius: 12px;
-    border: solid var(--bege-claro);
-  }
-  #inputMessage{
-    width: 100%;
-    height: 120px;
-    color: var(--azul-escuro);
-    border-radius: 12px;
-    border: solid var(--bege-claro);
-  }
-  
-  .form-container input[type="checkbox"] {
-    width: 20px; 
-    height: 20px;
-    accent-color: #0044cc; 
-    cursor: pointer; 
+/* Estilos para a página Quero Doar */
+
+.conteudoDoar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 115px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario {
+  max-width: 100%;
+  width: 520px;
+  background-color: var(--azul-escuro);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+
+.formulario h1 {
+  color: var(--bege-claro);
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.formulario label {
+  display: block;
+  margin: 10px 0;
+  color: var(--bege-claro);
+  font-size: 1.1rem;
+}
+
+.formulario select, 
+#inputEmail, 
+#inputNome, 
+#mensagem {
+  width: 100%;
+  height: 35px;
+  color: var(--azul-escuro);
+  border-radius: 12px;
+  border: solid var(--bege-claro);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#mensagem {
+  height: 100px;
+}
+
+#botaoEnviar {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  border: solid #af91d0;
+  background-color: #af91d0;
+  color: var(--azul-escuro);
+  margin: 20px auto 0;
+  cursor: pointer;
+  display: block;
+}
+
+.doarBluer {
+  max-width: 300px;
+  flex: 1;
+  text-align: right;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: var(--azul-escuro);
+}
+
+.doarBluer .escritos {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#botaoDoar {
+  width: 100%;
+  max-width: 130px;
+  height: 45px;
+  border-radius: 20px;
+  border: solid var(--azul-escuro);
+  background-color: var(--azul-escuro);
+  color: var(--bege-claro);
+  cursor: pointer;
+}
+
+#imagemDoar img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .conteudoDoar {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
   }
 
-  #botaoEnviar{
-    width: 160px; 
-    height: 50px;
-    border-radius: 12px;
-    border: solid #af91d0;
-    background-color: #af91d0;
-    color: var(--azul-escuro);
-    margin-left: 180px;
-    margin-top: 20px;
-    cursor: pointer;
+  .formulario {
+      margin-top: 20px;
   }
-  #botaoEnviar a:hover{
-    border: solid var(--azul-marinho);
-    background-color: var(--azul-marinho);
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+  .doarBluer {
+      text-align: center;
+      margin: 0;
+      font-size: 1.2rem;
   }
-  
-  #botaoDoar{
-    width: 130px; 
-    height: 45px;
-    border-radius: 20px;
-    border: solid var(--azul-escuro);
-    background-color: var(--azul-escuro);
-    color: var(--bege-claro);
-    margin-left: 370px;
-    margin-top: 20px;
-    cursor: pointer;
+
+  #botaoDoar {
+      margin: 20px auto;
+      display: block;
   }
-  .doarBluer{
-    max-width: 300px;
-    flex: 1;
-    text-align: right;
-    margin-top: 40px;
-    margin-right: 100px;
-    font-size: 160%;
-    color: var(--azul-escuro);
+}
+
+@media screen and (max-width: 480px) {
+  .formulario h1 {
+      font-size: 1.5rem;
   }
-  .escritos{
-    width: 500px;
-    
+
+  .doarBluer {
+      font-size: 1rem;
   }
-  #bluer{
-    color: var(--turquesa);
+
+  .formulario label,
+  .formulario select,
+  #inputEmail,
+  #inputNome,
+  #mensagem {
+      font-size: 1rem;
   }
-  
-  /* Fim página Quero Doar */
+
+  #botaoEnviar {
+      max-width: 100%;
+  }
+
+  #botaoDoar {
+      max-width: 100%;
+  }
+}
