@@ -163,3 +163,104 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra no vídeo */
     margin-bottom: 150px;
   }
+
+/* Estilos gerais para Cavalos-Marinhos */
+
+/* Para telas menores */
+@media (max-width: 768px) {
+  .primeira_secC {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: auto; /* Permite ajustar dinamicamente */
+  }
+
+  .caixa-textoC {
+      width: 90%;
+      margin: 0 auto 20px;
+      height: auto; /* Ajusta a altura automaticamente */
+  }
+
+  .imagem-cavalos img {
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+  }
+
+  .segunda_secC {
+      flex-direction: column;
+      gap: 20px;
+      height: auto;
+      padding: 10px;
+  }
+
+  .containerC {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .boxImagemC {
+      width: 90%;
+  }
+
+  .textoCavalos {
+      width: 90%;
+      height: auto;
+  }
+
+  .img1Cavalos img, .img2Cavalos img {
+      width: 100%;
+      height: auto;
+  }
+
+  #tituloSecC {
+      font-size: 200%;
+      margin-bottom: 20px;
+  }
+
+  .terceira_secC {
+      height: auto;
+      padding: 20px;
+  }
+
+  .videoC iframe {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+  .primeira_secC {
+      gap: 10px;
+  }
+
+  .caixa-textoC {
+      font-size: 14px; /* Reduz o tamanho da fonte */
+      line-height: 1.5;
+  }
+
+  .tituloTextoC {
+      font-size: 120%;
+  }
+
+  .titulo-cavalos h1 {
+      font-size: 150%;
+  }
+
+  .imagem-cavalos img {
+      margin-bottom: 20px;
+  }
+
+  .boxImagemC h2 {
+      font-size: 18px;
+  }
+
+  #curiosidades {
+      font-size: 200%;
+  }
+
+  .videoC iframe {
+      margin-bottom: 20px;
+  }
+}
