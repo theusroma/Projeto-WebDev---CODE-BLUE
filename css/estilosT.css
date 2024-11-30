@@ -1,5 +1,4 @@
 
-  
   /* Começo página Tartaryga */
   
   .primeira_secT{
@@ -263,7 +262,7 @@
     }
     
     #porraa{
-      width: 130%;
+      width: 100%;
       margin-right: 400px;
       border-radius: 40px; /* Deixa as fotos com bordas arredondadas */
      
@@ -286,3 +285,179 @@
     .retangulo_azul p {
       font-size: 1.2em;
     }
+    /* Começo página Tartaruga */
+
+@media (max-width: 600px) {
+  /* Primeira seção */
+  .primeira_secT {
+    flex-direction: column; /* Alinha os itens na vertical */
+    height: auto; /* Ajusta a altura automaticamente */
+    gap: 20px; /* Reduz o espaçamento */
+  }
+
+  .textotarta {
+    width: 90%; /* Texto ocupa quase toda a largura */
+    margin-left: 0; /* Remove o deslocamento à esquerda */
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .tituloTextoT {
+    font-size: 140%; /* Ajusta o tamanho do título */
+    margin-bottom: 20px;
+  }
+
+  .imagem_tarta img {
+    width: 100%; /* A imagem ocupa toda a largura */
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Segunda seção */
+  .segunda_secT {
+    background-color: var(--azul-escuro);
+    padding: 20px;
+  }
+
+  .sec_tarta2 {
+    flex-direction: column; /* Organiza os itens em coluna */
+    height: auto; /* Ajusta a altura */
+    margin-right: 0; /* Ajusta o margin-right */
+  }
+
+  .texto_tarta2 {
+    width: 130%;
+    margin-right: 0; /* Remove o espaço à direita */
+    margin-left: 0; /* Remove o espaço à esquerda */
+    text-align: center;
+  }
+
+  /* Terceira seção */
+  .fotoss {
+    width: 100%; /* As fotos ocupam toda a largura */
+    margin-left: 0; /* Remove o deslocamento à esquerda */
+    margin-bottom: 20px; /* Reduz o espaço entre as imagens */
+    padding: 20px;
+  }
+  #porraa{
+    width: 80%;
+  }
+
+  .baaixo {
+    width: 100%; /* Foto ocupa toda a largura */
+  }
+
+  .retangulo_azul {
+    width: 100%; /* O retângulo ocupa toda a largura */
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Primeira seção */
+  .primeira_secT {
+    flex-direction: row; /* Alinha os itens na horizontal */
+    gap: 50px; /* Aumenta o espaçamento */
+  }
+
+  .textotarta {
+    width: 50%; /* Texto ocupa 50% da largura */
+    margin-left: 20px;
+  }
+
+  .tituloTextoT {
+    font-size: 160%; /* Ajusta o tamanho do título */
+    margin-bottom: 30px;
+  }
+
+  .imagem_tarta img {
+    width: 80%; /* Imagem ocupa 80% da largura */
+    margin-left: 0;
+  }
+
+  /* Segunda seção */
+  .sec_tarta2 {
+    flex-direction: row; /* Organiza os itens lado a lado */
+    justify-content: space-between; /* Espaçamento entre os itens */
+  }
+
+  .texto_tarta2 {
+    width: 48%; /* Ajusta a largura da caixa de texto */
+    margin-left: 30px;
+  }
+
+  /* Terceira seção */
+  .fotoss {
+    width: 48%; /* Ajusta a largura das fotos */
+    margin-left: 30px; /* Ajusta o espaçamento à esquerda */
+    padding: 30px;
+  }
+
+  .baaixo {
+    width: 50%; /* Foto ocupa 50% da largura */
+  }
+
+  .retangulo_azul {
+    width: 48%; /* Retângulo azul ocupa 48% da largura */
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Primeira seção */
+  .primeira_secT {
+    flex-direction: row; /* Itens lado a lado */
+    gap: 70px; /* Espaçamento maior */
+  }
+
+  .textotarta {
+    width: 36%; /* Texto ocupa 36% da largura */
+    margin-left: 50px;
+  }
+
+  .tituloTextoT {
+    font-size: 190%; /* Ajuste do título */
+    margin-bottom: 40px;
+  }
+
+  .imagem_tarta img {
+    width: 90%; /* Imagem ocupa 90% da largura */
+    margin-left: 70px;
+  }
+
+  /* Segunda seção */
+  .sec_tarta2 {
+    flex-direction: row; /* Organiza os itens lado a lado */
+    justify-content: space-between;
+  }
+
+  .texto_tarta2 {
+    width: 50%; /* Ajusta a largura da caixa de texto */
+    margin-left: 50px;
+  }
+
+  /* Terceira seção */
+  .fotoss {
+    width: 65%; /* Fotos ocupam 65% da largura */
+    margin-left: 90px;
+    padding: 40px;
+  }
+
+  .baaixo {
+    width: 40%; /* Foto ocupa 40% da largura */
+  }
+
+  .retangulo_azul {
+    width: 30%; /* Retângulo azul ocupa 30% da largura */
+
+  }
+  
+  #porra{
+    width:40%;
+  }
+  
+  #porraa{
+    width:90%;
+  }
+}
+
