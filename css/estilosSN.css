@@ -64,4 +64,86 @@
   #foto4{
     width: 100%;
   }
+
+
+@media (max-width: 1200px) {
+  .sobre-nos {
+    flex-direction: row; /* Mantém as metades lado a lado */
+  }
+
+  .metade-direita {
+    margin-left: 20px; /* Diminui a margem esquerda */
+  }
+
+  .foto {
+    width: 45%; /* Diminui o tamanho das fotos nas linhas */
+  }
+}
+
+@media (max-width: 992px) {
+  .sobre-nos {
+    flex-direction: column; /* Deixa as metades empilhadas em telas menores */
+    height: auto; /* Remove a altura fixa para que o conteúdo possa rolar */
+  }
+
+  .metade-esquerda {
+    height: 50vh; /* Reduz a altura da metade esquerda */
+  }
+
+  .metade-direita {
+    margin-left: 0;
+    margin-top: 20px; /* Adiciona espaçamento entre as metades */
+  }
+
+  .foto {
+    width: 70%; /* Aumenta o tamanho das fotos nas telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-nos {
+    flex-direction: column; /* Empilha os elementos em telas menores ainda */
+  }
+
+  .metade-esquerda {
+    height: 40vh; /* Diminui ainda mais a altura da metade esquerda */
+  }
+
+  .linha {
+    flex-direction: column; /* Deixa as fotos empilhadas nas telas pequenas */
+    gap: 10px; /* Diminui o espaço entre as fotos */
+  }
+
+  .foto {
+    width: 80%; /* As fotos ocupam mais espaço, mas ainda respeitam a tela */
+  }
+
+  .foto img {
+    width: 100%; /* Imagem ocupa 100% da largura da foto */
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-nos {
+    flex-direction: column; /* Continua empilhando os elementos em telas de celular */
+    height: auto;
+  }
+
+  .metade-esquerda {
+    height: 30vh; /* Ajusta a altura da metade esquerda */
+  }
+
+  .linha {
+    flex-direction: column; /* Empilha as fotos em telas de celulares */
+    gap: 5px; /* Diminui o espaço entre as fotos */
+  }
+
+  .foto {
+    width: 90%; /* As fotos ocupam mais espaço em telas pequenas */
+  }
+
+  .foto img {
+    width: 100%; /* Imagem ocupa 100% da largura da foto */
+  }
+}
   
